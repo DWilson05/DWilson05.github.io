@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilson's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style> /*Creates style for headdings */
+        .center-text {
+            text-align: center;
+        }
+        .text-width {
+            word-spacing: 3ex; 
+        }
+        .container {
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align items to the start */
+            margin: 30px; /* Space around the container */
+        }
+        .info-box {
+            border: 1px solid #ff0000; /* Border color */
+            background-color: #626467; /* Background color */
+            color: #000000; /* Text color */
+            padding: 15px; /* Space inside the box */
+            border-radius: 5px; /* Rounded corners */
+            margin-left: 100px; /* Space between image and box */
+            margin-right: 80px; /* Space between box and side */
+            flex-grow: 1; /* Allow the box to take remaining space */
+            height: 300px; /* Set height to match the image */
+        }
+        .info-box img {
+            max-width: 80px; /* Set a max width for the image */
+            margin-right: 20px; /* Space between the image and text */
+        }
+    </style>
+</head>
+<body>
+    <div class="center-text text-width text-size">
+        <h1><b><form>
+            <label for="textbox">SHU Search Roster:</label>
+            <input type="text" id="textbox" name="textbox">
+            <input type="submit" value="Submit">
+        </form></b></h1>
+        <hr>
+        <br>
+        <h1><b>2024 - 2025 Mens Track and Field</b></h1>
+    </div>
+    <br>
+    <div class="container">
+        <img src="Photos/Cole.png" width="250">
+        <div class="info-box">
+            <strong>Information:</strong> This is an information box. You can add any content here.
+        </div>
+    </div>
+</body>
+</html>
