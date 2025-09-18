@@ -3,54 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilson's Website</title>
+    <title>Track Team Roster</title>
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="style.css">
-    <style> /*Creates style for headdings */
-        .center-text {
-            text-align: center;
-        }
-        .text-width {
-            word-spacing: 3ex; 
-        }
-        .container {
-            display: flex; /* Use flexbox for layout */
-            align-items: flex-start; /* Align items to the start */
-            margin: 30px; /* Space around the container */
-        }
-        .info-box {
-            border: 1px solid #ff0000; /* Border color */
-            background-color: #626467; /* Background color */
-            color: #000000; /* Text color */
-            padding: 15px; /* Space inside the box */
-            border-radius: 5px; /* Rounded corners */
-            margin-left: 100px; /* Space between image and box */
-            margin-right: 80px; /* Space between box and side */
-            flex-grow: 1; /* Allow the box to take remaining space */
-            height: 300px; /* Set height to match the image */
-        }
-        .info-box img {
-            max-width: 80px; /* Set a max width for the image */
-            margin-right: 20px; /* Space between the image and text */
-        }
-    </style>
 </head>
 <body>
-    <div class="center-text text-width text-size">
-        <h1><b><form>
-            <label for="textbox">SHU Search Roster:</label>
-            <input type="text" id="textbox" name="textbox">
-            <input type="submit" value="Submit">
-        </form></b></h1>
-        <hr>
-        <br>
-        <h1><b>2024 - 2025 Mens Track and Field</b></h1>
-    </div>
-    <br>
-    <div class="container">
-        <img src="Photos/Cole.png" width="250">
-        <div class="info-box">
-            <strong>Information:</strong> This is an information box. You can add any content here.
+    <!-- Search Bar Section -->
+    <header>
+        <img src="Photos/track-and-field-clipart-transparent-4.png" alt="Team Logo" class="logo">
+        <h1>Track Team Roster</h1>
+        <input type="text" id="searchBar" placeholder="Search team member...">
+        <!-- Dropdown results will appear here -->
+        <ul id="searchResults"></ul>
+    </header>
+
+    <!-- Team Roster Section -->
+    <main>
+        <h2 class="roster-heading">Men’s Roster</h2>
+        <!-- Men's roster cards go here -->
+
+        <!-- Example Team Member -->
+        <section id="damon-wilson" class="team-member">
+            <img src="Photos/Cole.png" alt="Damon Wilson">
+            <div class="info">
+                <h2>Damon Wilson</h2>
+                <p><strong>Event:</strong> 110m Hurdles</p>
+                <p><strong>Strengths:</strong> Quick reaction time, explosive speed, hurdle technique.</p>
+                <p><strong>About:</strong> Damon is one of the fastest hurdlers on the team, focused on breaking records.</p>
+            </div>
+        </section>
+
+        <section id="jane-smith" class="team-member">
+            <img src="images/jane.jpg" alt="Jane Smith">
+            <div class="info">
+                <h2>Jane Smith</h2>
+                <p><strong>Event:</strong> 400m Hurdles</p>
+                <p><strong>Strengths:</strong> Endurance, strong rhythm, consistent pacing.</p>
+                <p><strong>About:</strong> Jane is a dedicated athlete who excels in long sprints with hurdles.</p>
+            </div>
+        </section>
+
+        <h2 class="roster-heading">Women's Roster</h2>
+        <!-- Women's roster cards go here -->
+
+        <section id="bob-smith" class="team-member">
+            <img src="images/jane.jpg" alt="bob Smith">
+            <div class="info">
+                <h2>Bob Smith</h2>
+                <p><strong>Event:</strong> 400m Hurdles</p>
+                <p><strong>Strengths:</strong> Endurance, strong rhythm, consistent pacing.</p>
+                <p><strong>About:</strong> Jane is a dedicated athlete who excels in long sprints with hurdles.</p>
+            </div>
+        </section>
+
+        <section id="cline-smith" class="team-member">
+            <img src="images/jane.jpg" alt="cline Smith">
+            <div class="info">
+                <h2>Cline Smith</h2>
+                <p><strong>Event:</strong> 400m Hurdles</p>
+                <p><strong>Strengths:</strong> Endurance, strong rhythm, consistent pacing.</p>
+                <p><strong>About:</strong> Jane is a dedicated athlete who excels in long sprints with hurdles.</p>
+            </div>
+        </section>
+        <!-- Add more team members here by copying the section structure -->
+    </main>
+    <!-- Bottom Red Bar -->
+<div class="bottom-bar"></div>
+
+        <!-- About Me / Projects Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <!-- Left side: Photo -->
+            <div class="about-photo">
+                <img src="Photos/resume-1.png" alt="resume">
+            </div>
+
+            <!-- Right side: Description -->
+            <div class="about-description">
+                <h2>About Me & Projects</h2>
+                <p>Hello! I’m Damon Wilson, a track athlete and aspiring web developer. This website showcases my track team roster while also serving as a project to practice HTML, CSS, and JavaScript.</p>
+                <p>Projects included: interactive roster with hover effects, search functionality, responsive design, and dynamic content sections.</p>
+                <p>The goal was to create a clean, functional, and visually appealing site that demonstrates my skills and creativity.</p>
+            </div>
         </div>
+    </section>
+
+    <!-- Image Modal (popup when clicking a picture) -->
+    <div id="imageModal">
+        <span id="closeModal">&times;</span>
+        <img id="modalImg" src="" alt="Expanded view">
     </div>
+
+    <!-- About Me Photo Modal -->
+    <div id="aboutModal">
+        <span id="closeAboutModal">&times;</span>
+        <img id="aboutModalImg" src="" alt="Expanded About Me Photo">
+    </div>
+
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
