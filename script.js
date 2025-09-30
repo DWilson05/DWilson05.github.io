@@ -82,3 +82,44 @@ aboutModal.addEventListener('click', (e) => {
         aboutModal.style.display = 'none';
     }
 });
+
+// Carousel functionality
+const gallery = document.querySelector('.player-gallery');
+const leftBtn = document.querySelector('.carousel-btn.left');
+const rightBtn = document.querySelector('.carousel-btn.right');
+
+let scrollStep = 220; // one card width
+let autoScroll;
+
+// Move right
+function scrollRight() {
+  gallery.scrollBy({ left: scrollStep, behavior: 'smooth' });
+
+  // If we reach the end, snap back to start
+  if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 5) {
+    setTimeout(() => {
+      gallery.scrollTo({ left: 0, behavior: 'smooth' });
+    }, 600);
+  }
+}
+
+// Move left
+function scrollLeft() {
+  gallery.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+}
+
+// Button clicks
+rightBtn.addEventListener('click', scrollRight);
+leftBtn.addEventListener('click', scrollLeft);
+
+// Auto scroll every 3 seconds
+function startAutoScroll() {
+  autoScroll = setInterval(scrollRight, 3000);
+}
+
+// Pause when hovering
+gallery.addEventListener('mouseenter', () => clearInterval(autoScroll));
+gallery.addEventListener('mouseleave', startAutoScroll);
+
+// Start on load
+startAutoScroll();

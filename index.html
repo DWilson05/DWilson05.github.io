@@ -12,66 +12,147 @@
 <body>
     <!-- Search Bar Section -->
     <header>
+        <!-- Logo -->
         <img src="Photos/track-and-field-clipart-transparent-4.png" alt="Team Logo" class="logo">
         <h1>Track Team Roster</h1>
-        <input type="text" id="searchBar" placeholder="Search team member...">
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search...">
+            <a href="#about" class="about-btn">About Me</a>
+        </div>
         <!-- Dropdown results will appear here -->
         <ul id="searchResults"></ul>
     </header>
-    <!-- Hero Section -->
+    
+    <!-- Hero (Banner) Section -->
     <div class="hero"></div>
 
+    <!-- Bottom Red Bar -->
+    <div class="bottom-bar"></div>
+
+    <!-- Player Gallery Carousel -->
+    <section class="player-carousel">
+        <button class="carousel-btn left">&#10094;</button>
+    
+        <div class="player-gallery">
+            <!-- Example: Damon Wilson card scrolls to his roster section -->
+            <a href="#damon-wilson" class="player-card">
+                <img src="Photos/Damon.png" alt="Damon Wilson">
+            </a>
+            <a href="#sarunas-montvilla" class="player-card">
+                <img src="Photos/Sarunas.png" alt="Sarunas Montvilla">
+            </a>
+            <a href="#christean-sonta" class="player-card">
+                <img src="Photos/CJ.png" alt="Christean Sonta">
+            </a>
+            <a href="#brian-casey" class="player-card">
+                <img src="Photos/Brian.png" alt="Brian Casey">
+            </a>
+            <a href="#colin-brown" class="player-card">
+                <img src="Photos/Colin.png" alt="Colin Brown">
+            </a>
+            <a href="#jillian-audette" class="player-card">
+                <img src="Photos/Jillian.png" alt="Jillian Audette">
+            </a>
+            <a href="#olivia-spirakis" class="player-card">
+                <img src="Photos/Liv.png" alt="Olivia Spirakis">
+            </a>
+            <a href="#annalise-nassy" class="player-card">
+                <img src="Photos/Annalise.png" alt="Annalise Nassy">
+            </a>
+        </div>
+        <button class="carousel-btn right">&#10095;</button>
+    </section>
+    
     <!-- Team Roster Section -->
     <main>
         <h2 class="roster-heading">Men’s Roster</h2>
         
         <!-- Men's roster cards go here -->
         <section id="damon-wilson" class="team-member">
-            <img src="Photos/Cole.png" alt="Damon Wilson">
+            <img src="Photos/Damon.png" alt="Damon Wilson">
             <div class="info">
-                <h2>Damon Wilson</h2>
-                <p><strong>Event:</strong> 110m Hurdles</p>
-                <p><strong>Strengths:</strong> Quick reaction time, explosive speed, hurdle technique.</p>
+                <h2>Damon Wilson</h2><br>
+                <p><strong>Event:</strong> 110m Hurdles, 400m Hurdles, 200m, </p>
+                <p><strong>Strengths:</strong> Explosive speed, Hurdle technique.</p>
                 <p><strong>About:</strong> Damon is one of the fastest hurdlers on the team, focused on breaking records.</p>
             </div>
         </section>
 
-        <section id="jane-smith" class="team-member">
-            <img src="images/jane.jpg" alt="Jane Smith">
+        <section id="sarunas-montvilla" class="team-member">
+            <img src="Photos/Sarunas.png" alt="Sarunas Montvilla">
             <div class="info">
-                <h2>Jane Smith</h2>
+                <h2>Sarunas Montvilla</h2><br>
+                <p><strong>Event:</strong> Long Jump, Tripple Jump</p>
+                <p><strong>Strengths:</strong> Jumping Technique</p>
+                <p><strong>About:</strong> Sarunas is a dedicated and talented jumper when he is not injured.</p>
+            </div>
+        </section>
+
+        <section id="christean-sonta" class="team-member">
+            <img src="Photos/CJ.png" alt="Christean Sonta">
+            <div class="info">
+                <h2>Christean Sonta</h2><br>
                 <p><strong>Event:</strong> 400m Hurdles</p>
                 <p><strong>Strengths:</strong> Endurance, strong rhythm, consistent pacing.</p>
-                <p><strong>About:</strong> Jane is a dedicated athlete who excels in long sprints with hurdles.</p>
+                <p><strong>About:</strong> CJ is a hardworking athlete when he is at practice.</p>
+            </div>
+        </section>
+
+        <section id="brian-casey" class="team-member">
+            <img src="Photos/Brian.png" alt="Brian Casey">
+            <div class="info">
+                <h2>Brian Casey</h2><br>
+                <p><strong>Event:</strong> Long Jump, Tripple Jump</p>
+                <p><strong>Strengths:</strong> Technique</p>
+                <p><strong>About:</strong> Brian is dedicated to hanging out with the jumpers at the sand pit.</p>
+            </div>
+        </section>
+
+        <section id="colin-brown" class="team-member">
+            <img src="Photos/Colin.png" alt="Colin Brown">
+            <div class="info">
+                <h2>Colin Brown</h2><br>
+                <p><strong>Event:</strong> 100m, 200m, 400m, 4x400m </p>
+                <p><strong>Strengths:</strong> Top End Speed, Endurance, working under pressure.</p>
+                <p><strong>About:</strong> Colin is a huge point scorer and hard worker for the mens side. </p>
             </div>
         </section>
 
         <h2 class="roster-heading">Women's Roster</h2>
         <!-- Women's roster cards go here -->
 
-        <section id="bob-smith" class="team-member">
-            <img src="images/jane.jpg" alt="bob Smith">
+        <section id="jillian-audette" class="team-member">
+            <img src="Photos/Jillian.png" alt="Jillian Audette">
             <div class="info">
-                <h2>Bob Smith</h2>
-                <p><strong>Event:</strong> 400m Hurdles</p>
-                <p><strong>Strengths:</strong> Endurance, strong rhythm, consistent pacing.</p>
-                <p><strong>About:</strong> Jane is a dedicated athlete who excels in long sprints with hurdles.</p>
+                <h2>Jillian Audette</h2><br>
+                <p><strong>Event:</strong> 100m, 200m</p>
+                <p><strong>Strengths:</strong> Speed, Acceleration.</p>
+                <p><strong>About:</strong> Jillian is a talented athlete and dedicated to the sprints when she is not sick.</p>
             </div>
         </section>
 
-        <section id="cline-smith" class="team-member">
-            <img src="images/jane.jpg" alt="cline Smith">
+        <section id="olivia-spirakis" class="team-member">
+            <img src="Photos/Liv.png" alt="cline Smith">
             <div class="info">
-                <h2>Cline Smith</h2>
-                <p><strong>Event:</strong> 400m Hurdles</p>
-                <p><strong>Strengths:</strong> Endurance, strong rhythm, consistent pacing.</p>
-                <p><strong>About:</strong> Jane is a dedicated athlete who excels in long sprints with hurdles.</p>
+                <h2>Olivia Spirakis</h2><br>
+                <p><strong>Event:</strong> Long Jump, Tripple Jump</p>
+                <p><strong>Strengths:</strong> Jumping form similar to a "Brexit" tackle.</p>
+                <p><strong>About:</strong> Liv is dedicated to hanging out with the jumpers and playing in the sand pit.</p>
+            </div>
+        </section>
+        <section id="annalise-nassy" class="team-member">
+            <img src="Photos/Annalise.png" alt="Annalise Nassy">
+            <div class="info">
+                <h2>Annalise Nassy</h2><br>
+                <p><strong>Events:</strong> 400m, 200m, 4x400m</p>
+                <p><strong>Strengths:</strong> Top End Speed, Accelleration, Consistent Pacing.</p>
+                <p><strong>About:</strong> Annalise is a dedicated athlete and point scorer in the womens 4x4 team.</p>
             </div>
         </section>
         <!-- Add more team members here by copying the section structure -->
     </main>
     <!-- Bottom Red Bar -->
-<div class="bottom-bar"></div>
+    <div class="bottom-bar"></div>
 
         <!-- About Me / Projects Section -->
     <section id="about" class="about-section">
@@ -83,8 +164,8 @@
 
             <!-- Right side: Description -->
             <div class="about-description">
-                <h2>About Me & Projects</h2>
-                <p>Hello! I’m Damon Wilson, a track athlete and aspiring web developer. This website showcases my track team roster while also serving as a project to practice HTML, CSS, and JavaScript.</p>
+                <h2>About Me & Projects</h2><br>
+                <p>Hello! I’m Damon Wilson, a track athlete and Computer Science major who wanted to learn more about web development. This website showcases my track team roster while also serving as a project to practice HTML, CSS, and JavaScript.</p>
                 <p>Projects included: interactive roster with hover effects, search functionality, responsive design, and dynamic content sections.</p>
                 <p>The goal was to create a clean, functional, and visually appealing site that demonstrates my skills and creativity.</p>
             </div>
@@ -103,8 +184,45 @@
         <img id="aboutModalImg" src="" alt="Expanded About Me Photo">
     </div>
 
-
     <!-- Link to JavaScript file -->
     <script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
