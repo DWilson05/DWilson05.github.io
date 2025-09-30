@@ -39,7 +39,7 @@ header h1 {
 
 /* Search bar styling */
 #searchBar {
-    width: 60%;
+    width: 55%;
     padding: 6px;        /* slimmer bar */
     font-size: 14px;     /* slightly smaller text */
     margin-top: 5px;     /* reduce gap below heading */
@@ -60,6 +60,28 @@ header h1 {
 }
 #searchResults li:hover {
     background: #b4b2b2;
+}
+
+/* Style for About Me button inside header */
+.about-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-left: 10px;
+    background-color: #ffcc00;   /* gold to match your theme */
+    color: #222;                 /* dark text for contrast */
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+}
+
+.about-btn:hover {
+    background-color: transparent;
+    color: #ffcc00;
+    cursor: pointer;
 }
 
 /* Hero / Parallax Section */

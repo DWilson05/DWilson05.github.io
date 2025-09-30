@@ -11,6 +11,17 @@ const members = Array.from(teamMembers).map(member => {
     };
 });
 
+// Helper: scroll with header offset
+function scrollToWithOffset(element, offset) {
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+}
+
 // Listen for typing in the search bar
 searchBar.addEventListener('input', function() {
     const query = this.value.toLowerCase();
@@ -25,8 +36,8 @@ searchBar.addEventListener('input', function() {
             const li = document.createElement('li');
             li.innerText = member.name;
             li.addEventListener('click', () => {
-                // Scroll smoothly to the member's section
-                document.getElementById(member.id).scrollIntoView({ behavior: 'smooth' });
+                const target = document.getElementById(member.id);
+                scrollToWithOffset(target, 160); // adjust 160 to your header height
                 searchResults.innerHTML = ""; // Clear results after clicking
                 searchBar.value = ""; // Reset search bar
             });
