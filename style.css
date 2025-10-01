@@ -20,11 +20,19 @@ header {
 header .logo {
     position: absolute;
     top: 10px;
-    left: 5vw;      /* moves proportionally with viewport width */
-    width: 7.5vw;     /* scales with viewport width */
+    left: 5vw;       /* moves proportionally with viewport width */
+    width: 7.5vw;    /* scales with viewport width */
     max-width: 200px;
     min-width: 100px;
     height: auto;    /* maintains aspect ratio */
+    display: block;  /* default visible */
+}
+
+/* On mobile (under 600px), hide logo */
+@media (max-width: 600px) {
+  header .logo {
+    display: none;
+  }
 }
 
 /* Stack title + search bar */
@@ -97,7 +105,7 @@ header h1 {
 @media (max-width: 768px) {
     .hero {
         height: 250px;              /* shorter height */
-        background-attachment: scroll; /* disable parallax (fixed often breaks on mobile) */
+        background-attachment: fixed; /* scroll to disable parallax (fixed often breaks on mobile) */
         background-position: top;   /* show top of image */
     }
 }
