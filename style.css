@@ -86,11 +86,20 @@ header h1 {
 
 /* Hero / Parallax Section */
 .hero {
-    height: 400px; /* Adjust height to what looks good */
-    background-image: url("Photos/HeroBanner.jpg"); /* Replace with your image */
-    background-size: cover;        /* Cover full section */
-    background-position: center;   /* Keep image centered */
-    background-attachment: fixed;  /* Key for parallax effect */
+    height: 480px; /* Default desktop size */
+    background-image: url("Photos/HeroBanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 250px;              /* shorter height */
+        background-attachment: scroll; /* disable parallax (fixed often breaks on mobile) */
+        background-position: top;   /* show top of image */
+    }
 }
 
 /* Team Member Cards */
@@ -107,8 +116,7 @@ header h1 {
 /* Team Member Photo */
 .team-member img {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;        /* Start cropped as a circle */
+    height: 180px;
     object-fit: cover;         /* Fill the circle nicely */
     margin-right: 100px;
     margin-left: 30px;
@@ -124,6 +132,32 @@ header h1 {
     transform: scale(1.2); /* Extra zoom for dramatic effect */
     z-index: 10;      /* Keep image above text while hovered */
     padding-top: 20px;     /* Small padding for better look */
+}
+
+/* Tablet (shrink base size) */
+@media (max-width: 768px) {
+    .team-member img {
+        width: 180px;
+        height: 180px;
+        margin: 0 15px;
+    }
+
+    .team-member img:hover {
+        width: 160px;
+    }
+}
+
+/* Mobile (smallest) */
+@media (max-width: 480px) {
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        margin: 0 10px;
+    }
+
+    .team-member img:hover {
+        width: 140px;
+    }
 }
 
 /* roster section separator */
