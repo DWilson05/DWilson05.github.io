@@ -105,7 +105,7 @@ header h1 {
 @media (max-width: 768px) {
     .hero {
         height: 250px;              /* shorter height */
-        background-attachment: fixed; /* scroll to disable parallax (fixed often breaks on mobile) */
+        background-attachment: scroll; /* scroll to disable parallax (fixed often breaks on mobile) */
         background-position: top;   /* show top of image */
     }
 }
