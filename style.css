@@ -102,7 +102,7 @@ header h1 {
 }
 
 /* Mobile adjustments */
-@media (max-width: 600px) { /* Tablet and below (768px)*/
+@media (max-width: 768px) { /* Tablet and below (768px)*/
     .hero {
         height: 250px;              /* shorter height */
         background-attachment: scroll; /* scroll to disable parallax (fixed often breaks on mobile) */
