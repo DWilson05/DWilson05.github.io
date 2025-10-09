@@ -381,8 +381,8 @@ html {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  display: block;          /* ✅ clickable link */
-  cursor: pointer;         /* ✅ hand cursor */
+  display: block;          /* clickable link */
+  cursor: pointer;         /* hand cursor */
   position: relative;
   z-index: 5;
   text-decoration: none;   /* remove underline */
